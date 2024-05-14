@@ -1,0 +1,15 @@
+.but
+{
+    background-color: rgb(149, 187, 174);
+    border-radius: 5px;
+    width: 200px;
+    color: white;
+    padding: 10px;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(101, 117, 207);
+    }
+}
+.k{
+background-color: rgb(220, 174, 88);
+}

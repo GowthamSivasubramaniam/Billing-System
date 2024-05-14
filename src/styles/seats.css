@@ -1,0 +1,28 @@
+.seat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #fffdfd;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .seat.selected {
+    background-color: #007bff; 
+    color: #fff;
+  }
+  .seat.booked {
+    background-color: #8d8e90; 
+    color: #fff;
+  }
+  #click
+  {
+    display: none;
+  }
+  .seat-grid
+  {
+    display: flex;
+  }

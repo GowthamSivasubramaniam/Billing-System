@@ -1,0 +1,30 @@
+const mongo=require('mongoose')
+const userschema =mongo.Schema(
+    {
+      
+        product:
+        {
+            type:String,
+            required:true
+        },
+        product_qty:
+        {
+            type:Number,
+            required:true
+        },
+        Amount :
+        {
+            type:Number,
+            required:true
+        },
+        date :
+        {
+            type:Date,
+            required:true
+        },
+       
+    }
+);
+const Product=mongo.model('product',userschema)
+
+module.exports= Product;

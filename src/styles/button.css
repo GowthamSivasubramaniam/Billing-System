@@ -1,0 +1,19 @@
+:root{
+    --back :linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --back1 :linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.button {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 17px;
+    color: white;
+    background: var(--back);
+    border: none;
+    &:hover{
+        background: var(--back1);
+        cursor: pointer;
+    }
+  }
+  

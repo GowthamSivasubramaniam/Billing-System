@@ -1,0 +1,11 @@
+.module{
+    padding: 20px;
+    font-size: 1.2em;
+    width:200px;
+    border-radius: 5px;
+}
+.module:hover
+{
+    background-color: rgb(36, 206, 109);
+    cursor: pointer;
+}

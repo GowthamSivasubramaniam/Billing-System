@@ -1,0 +1,53 @@
+const mongo=require('mongoose')
+const userschema =mongo.Schema(
+    {
+        name:
+        {
+            type:String,
+            required :true,
+        },
+        phoneno:
+        {
+            type:String,
+            required:true
+        },
+        resource:
+        {
+            type:String,
+            required:true
+        },
+        resource:
+        {
+            type:String,
+            required:true
+        },
+        qty:
+        {
+            type:Number,
+            required:true
+        },
+        product:
+        {
+            type:String,
+            required:true
+        },
+        product_qty:
+        {
+            type:Number,
+            required:true
+        },
+        anticipatedbill :
+        {
+            type:Number,
+            required:true
+        },
+        deleivdate :
+        {
+            type:Date,
+            required:true
+        }
+    }
+);
+const Client=mongo.model('client',userschema)
+
+module.exports= Client;

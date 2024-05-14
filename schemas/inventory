@@ -1,0 +1,29 @@
+const mongo=require('mongoose')
+const userschema =mongo.Schema(
+    {
+        resource:
+        {
+            type:String,
+            required:true
+        },
+        qty:
+        {
+            type:Number,
+            required:true
+        },
+        Amount :
+        {
+            type:Number,
+
+            required:true
+        },
+        date :
+        {
+            type:Date,
+            required:true
+        }
+    }
+);
+const Inventory=mongo.model('inventory',userschema)
+
+module.exports= Inventory;

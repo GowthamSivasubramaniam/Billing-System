@@ -1,0 +1,19 @@
+const mongo=require('mongoose')
+const userschema =mongo.Schema(
+    {
+        mail:
+        {
+            type:String,
+            required :true,
+            unique:true
+        },
+        password:
+        {
+            type:String,
+            required:true
+        }
+    }
+);
+const User=mongo.model('user',userschema)
+
+module.exports= User;
